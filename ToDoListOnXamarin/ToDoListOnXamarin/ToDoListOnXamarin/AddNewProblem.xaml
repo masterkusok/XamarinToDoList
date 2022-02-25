@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ToDoListOnXamarin.AddNewProblem">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout x:Name="Header" Orientation="Horizontal" VerticalOptions="Start"></StackLayout>
+            <StackLayout Orientation="Vertical" x:Name="Conten" HorizontalOptions="CenterAndExpand">
+                <Editor x:Name="ProblemText" Placeholder="Введите текст нового задания"></Editor>
+                <StackLayout Orientation="Horizontal">
+                    <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text="Повторять это задание каждый день?"></Label>
+                    <CheckBox x:Name="RepeatCheckBox"></CheckBox>
+                </StackLayout>
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" x:Name="Bottom" VerticalOptions="End" HorizontalOptions="CenterAndExpand">
+                <Button Margin="10" BackgroundColor="Blue" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" 
+                        x:Name="ApplyBtn" Text="Сохранить"></Button>
+                <Button Margin="10" BackgroundColor="Red" TextColor="White" FontAttributes="Bold" HorizontalOptions="End" 
+                        x:Name="CancelBtn" Text="Отмена"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

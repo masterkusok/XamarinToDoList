@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ToDoListOnXamarin.MainPage">
+
+    <StackLayout>
+        <StackLayout Spacing="20" BackgroundColor="Blue" Orientation="Horizontal" VerticalOptions="Start" x:Name="TopLayout">
+            <Label TextColor="White" HorizontalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="35">TO DO LIST</Label>
+            <Button x:Name="addNewTaskBtn" TextColor="White" BackgroundColor="Transparent" HorizontalOptions="End"></Button>
+            <Button x:Name="showEditTaskBtn" TextColor="White" BackgroundColor="Transparent" HorizontalOptions="End"></Button>
+            <Button x:Name="showStatisticsBtn" TextColor="White" BackgroundColor="Transparent" HorizontalOptions="End"></Button>
+
+        </StackLayout>
+        <StackLayout x:Name="VerticalLayout" VerticalOptions="CenterAndExpand"></StackLayout>
+        <StackLayout HorizontalOptions="Center" Orientation="Horizontal" x:Name="BottomLayout" VerticalOptions="End">
+
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

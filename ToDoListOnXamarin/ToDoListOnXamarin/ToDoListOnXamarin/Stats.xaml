@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ToDoListOnXamarin.Stats">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal" BackgroundColor="Blue" x:Name="UpperLayout" VerticalOptions="Start" Padding="20">
+                <Label TextColor="White" HorizontalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="35">TO DO LIST</Label>
+                <Button x:Name="returnBtn" HorizontalOptions="Center" Text="Вернуться в главное меню" VerticalOptions="End" 
+                       TextColor="White" BackgroundColor="Transparent"></Button>
+            </StackLayout>
+            <StackLayout x:Name="contentLayout"  HorizontalOptions="Center" VerticalOptions="Center">
+                <Label VerticalOptions="Start" TextColor="Black" x:Name="timesDoneLabel" FontSize="20" FontFamily="Segoe-Ui" HorizontalOptions="Center" 
+                       HorizontalTextAlignment="Center"></Label>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <skia:SKCanvasView x:Name="canvasView" WidthRequest="350" HeightRequest="350">
+                    </skia:SKCanvasView>
+                    <StackLayout x:Name="RightColumn" Orientation="Vertical">
+                        <Label FontAttributes="Bold" FontSize="20" TextColor="Blue" HorizontalOptions="Center" x:Name="undoneLabel"></Label>
+                        <Label FontAttributes="Bold" FontSize="20" TextColor="LightBlue" HorizontalOptions="Center" x:Name="doneLabel"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
